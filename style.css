@@ -1,3 +1,9 @@
+body {
+    margin:0;
+    /* background-image: url('images/pexels-didsss-2508565.jpg');
+    background-size: cover;
+    background-attachment: fixed; */
+}
 a {
     color:pink;
     text-decoration: none;
@@ -6,6 +12,7 @@ header {
     background-color:#902222;
     color:white;
 }
+/* Here is my comment */
 h1 {
     font-size: 50px;
     font-family: "Fjalla One", sans-serif;
@@ -15,6 +22,7 @@ h1 {
     text-shadow: 5px 5px 1px black;
     text-transform: uppercase;
     text-align: center;
+    margin:0;
 }
 p {
     font-size: 1rem;
@@ -35,4 +43,27 @@ span {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+}
+nav {
+    border:2px solid #902222;
+    border-radius: 20px;
+}
+nav ul li {
+    display:inline-block;
+    padding:10px 20px;
+    /* margin: 30px 30px 30px 30px; */
+    background-color:grey;
+}
+nav ul li a {
+    color:#fff;
+}
+.myimage {
+    width:300px;
+}
+.backgroundimage {
+    height:300px;
+    background-image: url('images/pexels-didsss-2508565.jpg');
+    background-size:cover;
+    background-position: 50% 95%;
+    background-repeat: no-repeat;
 }
