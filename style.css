@@ -3,6 +3,8 @@ body {
     /* background-image: url('images/pexels-didsss-2508565.jpg');
     background-size: cover;
     background-attachment: fixed; */
+    background-image:linear-gradient(to bottom, #eeeeee, #ffffff);
+    background-attachment: fixed;
 }
 a {
     color:pink;
@@ -11,6 +13,9 @@ a {
 header {
     background-color:#902222;
     color:white;
+}
+header h1 {
+    margin:0;
 }
 /* Here is my comment */
 h1 {
@@ -43,19 +48,31 @@ span {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+    background-color:#fff;
+    min-width:960px;
+    max-width:2048px;
+    box-shadow: 0px 3px 3px rgba(66,66,66,0.3);
 }
 nav {
-    border:2px solid #902222;
-    border-radius: 20px;
+    /* border:2px solid #902222;
+    border-radius: 20px; */
+    background-color:grey;
+}
+nav ul {
+    margin:0;
+    padding:0;
 }
 nav ul li {
     display:inline-block;
-    padding:10px 20px;
+    
     /* margin: 30px 30px 30px 30px; */
     background-color:grey;
 }
 nav ul li a {
+    display:inline-block;
     color:#fff;
+    border-right:1px solid #fff;
+    padding:10px 20px;
 }
 .myimage {
     width:300px;
