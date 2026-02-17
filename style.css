@@ -143,6 +143,6 @@ main {
     left:0;
     z-index: -1;
 }
-.relative {
+.gallery {
     position: relative;
 }
