@@ -1,3 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width:100%;
+}
+/* Color Theme Swatches in Hex */
+.Game-Design-1-hex { color: #121126; }
+.Game-Design-2-hex { color: #274259; }
+.Game-Design-3-hex { color: #F2BF80; }
+.Game-Design-4-hex { color: #D95032; }
+.Game-Design-5-hex { color: #F24738; }
+
+/* Color Theme Swatches in RGBA */
+.Game-Design-1-rgba { color: rgba(17, 17, 38, 1); }
+.Game-Design-2-rgba { color: rgba(39, 65, 89, 1); }
+.Game-Design-3-rgba { color: rgba(242, 191, 128, 1); }
+.Game-Design-4-rgba { color: rgba(216, 80, 49, 1); }
+.Game-Design-5-rgba { color: rgba(242, 71, 55, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Game-Design-1-hsla { color: hsla(241, 37, 10, 1); }
+.Game-Design-2-hsla { color: hsla(208, 38, 25, 1); }
+.Game-Design-3-hsla { color: hsla(33, 81, 72, 1); }
+.Game-Design-4-hsla { color: hsla(11, 68, 52, 1); }
+.Game-Design-5-hsla { color: hsla(5, 87, 58, 1); }
+
 body {
     margin:0;
     /* background-image: url('images/pexels-didsss-2508565.jpg');
@@ -33,7 +60,7 @@ p {
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2rem;
-    text-indent:50px;
+    /* text-indent:50px; */
 }
 span {
     font-size:1rem;
@@ -57,6 +84,9 @@ nav {
     /* border:2px solid #902222;
     border-radius: 20px; */
     background-color:grey;
+    position:sticky;
+    top:0;
+    z-index:1;
 }
 nav ul {
     margin:0;
@@ -74,13 +104,45 @@ nav ul li a {
     border-right:1px solid #fff;
     padding:10px 20px;
 }
+nav ul li a:hover {
+    background-color:#F2BF80;
+    color:#000;
+}
 .myimage {
-    width:300px;
+    width:200px;
+    float:left;
+    padding:10px;
+}
+.clear {
+    clear:both;
 }
 .backgroundimage {
-    height:300px;
+    /* height:calc(100vh - 300px); */
+    height: 300px;
     background-image: url('images/pexels-didsss-2508565.jpg');
     background-size:cover;
     background-position: 50% 95%;
     background-repeat: no-repeat;
+}
+main {
+    padding:30px;
+}
+.herocontent {
+    text-align: center;
+    padding:20px 100px;
+}
+.column {
+    float:left;
+    width:25%;
+    margin:50px 0;
+    background-color:#eee;
+}
+.absolute {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+.relative {
+    position: relative;
 }
